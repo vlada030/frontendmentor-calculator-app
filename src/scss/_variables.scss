@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+$fontFamily: 'Spartan', sans-serif;
+$fontSize: 32px;
+$fontWeight: 700;
+
+$colorBackgroundMainTheme1: hsl(221, 27%, 31%);
+$colorBackgroundMainTheme2: hsl(0, 0%, 90%);
+$colorBackgroundMainTheme3: hsl(268, 75%, 9%);
+
+$colorBackgroundKeypadTheme1: hsl(223, 31%, 20%);
+$colorBackgroundKeypadTheme2: hsl(0, 5%, 81%);
+$colorBackgroundKeypadTheme3: hsl(268, 71%, 12%);
+
+$colorBackgroundScreenTheme1: hsl(223, 37%, 15%);
+$colorBackgroundScreenTheme2: hsl(0, 0%, 93%);
+$colorBackgroundScreenTheme3: hsl(268, 71%, 12%);
+
+$colorKeyMainBacgroundTheme1: hsl(225, 21%, 49%);
+$colorKeyMainBacgroundTheme2: hsl(185, 42%, 37%);
+$colorKeyMainBacgroundTheme3: hsl(281, 89%, 26%);
+
+$colorKeyMainShadowTheme1: hsl(224, 28%, 35%);
+$colorKeyMainShadowTheme2: hsl(185, 58%, 25%);
+$colorKeyMainShadowTheme3: hsl(285, 91%, 52%);
+
+$colorKeyToggleBackgroundTheme1: hsl(6, 63%, 50%);
+$colorKeyToggleBackgroundTheme2: hsl(25, 98%, 40%);
+$colorKeyToggleBackgroundTheme3: hsl(176, 100%, 44%);
+
+$colorKeyShadowTheme1: hsl(6, 70%, 34%);
+$colorKeyShadowTheme2: hsl(25, 99%, 27%);
+$colorKeyShadowTheme3: hsl(177, 92%, 70%);
+
+$colorKeySecondBacgroundTheme1: hsl(30, 25%, 89%);
+$colorKeySecondBacgroundTheme2: hsl(45, 7%, 89%);
+$colorKeySecondBacgroundTheme3: hsl(268, 47%, 21%);
+
+$colorKeySecondShadowTheme1: hsl(28, 16%, 65%);
+$colorKeySecondShadowTheme2: hsl(35, 11%, 61%);
+$colorKeySecondShadowTheme3: hsl(290, 70%, 36%);
+
+$colorTextLightTheme1: hsl(0, 0, 100%);
+$colorTextLightTheme2: hsl(60, 10%, 19%);
+$colorTextLightTheme3: hsl(52, 100%, 62%);
+
+$colorTextDarkTheme1: hsl(221, 14%, 31%);
+$colorTextDarkTheme2: hsl(0, 0, 100%);
+$colorTextDarkTheme3: hsl(198, 20%, 13%);
+
+$colorTextMedTheme3: hsl(0, 0, 100%);

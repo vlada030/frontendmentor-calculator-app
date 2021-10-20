@@ -1,0 +1,62 @@
+body.dark {
+    .section {
+        background-color: $colorBackgroundMainTheme1;
+
+        .header {
+            color: $colorTextLightTheme1;
+
+            .theme__slider {
+                background-color: $colorBackgroundKeypadTheme1;
+
+                .circle {
+                    background-color: $colorKeyToggleBackgroundTheme1;
+                }
+            }
+        }
+
+        .display {
+            background-color: $colorBackgroundKeypadTheme1;
+            color: $colorTextLightTheme1;
+        }
+
+        .keypad {
+            background-color: $colorBackgroundKeypadTheme1;
+        }
+    }
+}
+
+body.light {
+    .section {
+        background-color: $colorBackgroundMainTheme2;
+
+        .header {
+            color: $colorTextLightTheme2;
+
+            .theme__slider {
+                background-color: $colorBackgroundKeypadTheme2;
+
+                .circle {
+                    background-color: $colorKeyToggleBackgroundTheme2;
+                }
+            }
+        }
+    }
+}
+
+body.custom {
+    .section {
+        background-color: $colorBackgroundMainTheme3;
+
+        .header {
+            color: $colorTextLightTheme3;
+
+            .theme__slider {
+                background-color: $colorBackgroundKeypadTheme3;
+
+                .circle {
+                    background-color: $colorKeyToggleBackgroundTheme3;
+                }
+            }
+        }
+    }
+}

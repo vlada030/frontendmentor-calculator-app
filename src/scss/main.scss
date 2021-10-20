@@ -1,8 +1,12 @@
-@import '../scss/sanitize/sanitize.scss';
-@import '../scss/sanitize/forms.scss';
-@import '../scss/sanitize/assets.scss';
+// sanitize.css (normalize.css)
+// @import '../scss/sanitize/sanitize.scss';
+// @import '../scss/sanitize/forms.scss';
+// @import '../scss/sanitize/assets.scss';
 
+// normalize.css
+@import './normalize/normalize.scss';
 
 @import './variables';
 @import './defaults';
-@import './typography';
+@import './themes';
+@import './section';
