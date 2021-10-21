@@ -1,22 +1,12 @@
 import "../scss/main.scss";
 
-const themeSelectorBtn = document.getElementById("themeSelectorBtn");
-//const body = document.querySelector("body");
-const body = document.body;
+import {themeToggle, initializeTheme} from './themeManagement'
 
-themeSelectorBtn.addEventListener("click", () => {
-    const classArr = ["dark", "light", "custom"];
+// set initial theme
+initializeTheme()
 
-    const arrLength = classArr.length;
+// theme changer
+themeToggle();
 
-    for (let i = 0; i < arrLength; i++) {
-        if (body.classList.contains(classArr[i])) {
-            body.classList.toggle(classArr[i], false);
 
-            i !== arrLength - 1
-                ? body.classList.toggle(classArr[i + 1], true)
-                : body.classList.toggle(classArr[0], true);
-            return;
-        }
-    }
-});
+
