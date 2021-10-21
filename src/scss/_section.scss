@@ -88,17 +88,19 @@
     }
 
     .display {
-        text-align: right;
         border-radius: 10px;
 
         display: grid;
-        align-items: center;
+        align-content: center;
 
         padding: 0 24px;
-
+        
         p {
             font-size: 32px;
             letter-spacing: -0.5px;
+            //overflow-x: hidden;
+            word-wrap: break-word;
+            word-break: break-all;
         }
 
         @include media(laptop) {
