@@ -3,6 +3,7 @@
 $fontFamily: 'Spartan', sans-serif;
 $fontSize: 32px;
 $fontWeight: 700;
+$transition: all 0.2s;
 
 $colorBackgroundMainTheme1: hsl(221, 27%, 31%);
 $colorBackgroundMainTheme2: hsl(0, 0%, 90%);
@@ -20,6 +21,18 @@ $colorKeyMainBacgroundTheme1: hsl(225, 21%, 49%);
 $colorKeyMainBacgroundTheme2: hsl(185, 42%, 37%);
 $colorKeyMainBacgroundTheme3: hsl(281, 89%, 26%);
 
+$colorKeyMainBacgroundHoverTheme1: #FFFFFE;
+$colorKeyMainBacgroundHoverTheme2: #ffffff;
+$colorKeyMainBackgroundHoverTheme3: hsla(268, 54%, 44%, 1);
+
+$colorKeyBackgroundSecondaryHoverTheme1: hsla(224, 51%, 76%, 1);
+$colorKeyBackgroundSecondaryHoverTheme2: hsla(184, 40%, 56%, 1);
+$colorKeyBackgroundSecondaryHoverTheme3: hsla(280, 56%, 44%, 1);
+
+$colorKeyBackgroundTertiaryHoverTheme1: hsla(6, 93%, 67%, 1);
+$colorKeyBackgroundTertiaryHoverTheme2: hsla(25, 100%, 61%, 1);
+$colorKeyBackgroundTertiaryHoverTheme3: hsla(176, 100%, 79%, 1);
+
 $colorKeyMainShadowTheme1: hsl(224, 28%, 35%);
 $colorKeyMainShadowTheme2: hsl(185, 58%, 25%);
 $colorKeyMainShadowTheme3: hsl(285, 91%, 52%);
@@ -31,6 +44,7 @@ $colorKeyToggleBackgroundTheme3: hsl(176, 100%, 44%);
 $colorKeyShadowTheme1: hsl(6, 70%, 34%);
 $colorKeyShadowTheme2: hsl(25, 99%, 27%);
 $colorKeyShadowTheme3: hsl(177, 92%, 70%);
+
 
 $colorKeySecondBacgroundTheme1: hsl(30, 25%, 89%);
 $colorKeySecondBacgroundTheme2: hsl(45, 7%, 89%);

@@ -1,0 +1,5 @@
+@mixin media($device) {
+    @if $device == laptop {
+        @media screen and (min-width: 992px) {@content};
+    }
+}
