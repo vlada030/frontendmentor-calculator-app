@@ -1,4 +1,4 @@
-import "../scss/main.scss";
+import "../scss/main.scss"
 
 import {themeToggle, initializeTheme} from './themeManagement'
 
@@ -6,7 +6,7 @@ import {themeToggle, initializeTheme} from './themeManagement'
 initializeTheme()
 
 // theme changer
-themeToggle();
+themeToggle()
 
 
 

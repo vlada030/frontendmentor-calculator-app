@@ -2,9 +2,12 @@ import {body, themeSelectorBtn} from './variables'
 import {setToLocalStorage, getFromLocalStorage} from './helper'
 
 export function initializeTheme() {
-    const theme = getFromLocalStorage('theme')
-    const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
-    console.log(systemTheme);
+    
+    const localTheme = getFromLocalStorage('theme')
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light'
+
+    // localy saved has precedence over system theme
+    const theme = localTheme ? localTheme : systemTheme
 
     body.className = ''
     body.classList.add(theme)
