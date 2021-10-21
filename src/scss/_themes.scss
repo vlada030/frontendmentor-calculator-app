@@ -15,12 +15,30 @@ body.dark {
         }
 
         .display {
-            background-color: $colorBackgroundKeypadTheme1;
+            background-color: $colorBackgroundScreenTheme1;
             color: $colorTextLightTheme1;
         }
 
         .keypad {
             background-color: $colorBackgroundKeypadTheme1;
+
+            .btn {
+                color: $colorTextDarkTheme1;
+                background-color: $colorKeySecondBacgroundTheme1;
+                box-shadow: inset 0px -4px $colorKeySecondShadowTheme1;
+
+                &--text {
+                    color: $colorTextLightTheme1;
+                    background-color: $colorKeyMainBacgroundTheme1;
+                    box-shadow: inset 0px -4px $colorKeyMainShadowTheme1;
+                }
+
+                &--equal {
+                    color: $colorTextLightTheme1;
+                    background-color: $colorKeyToggleBackgroundTheme1;
+                    box-shadow: inset 0px -4px $colorKeyShadowTheme1;
+                }
+            }
         }
     }
 }
@@ -40,6 +58,33 @@ body.light {
                 }
             }
         }
+
+        .display {
+            background-color: $colorBackgroundScreenTheme2;
+            color: $colorTextLightTheme2;
+        }
+
+        .keypad {
+            background-color: $colorBackgroundKeypadTheme2;
+
+            .btn {
+                color: $colorTextLightTheme2;
+                background-color: $colorKeySecondBacgroundTheme2;
+                box-shadow: inset 0px -4px $colorKeySecondShadowTheme2;
+
+                &--text {
+                    color: $colorTextDarkTheme2;
+                    background-color: $colorKeyMainBacgroundTheme2;
+                    box-shadow: inset 0px -4px $colorKeyMainShadowTheme2;
+                }
+
+                &--equal {
+                    color: $colorTextDarkTheme2;
+                    background-color: $colorKeyToggleBackgroundTheme2;
+                    box-shadow: inset 0px -4px $colorKeyShadowTheme2;
+                }
+            }
+        }
     }
 }
 
@@ -51,10 +96,36 @@ body.custom {
             color: $colorTextLightTheme3;
 
             .theme__slider {
-                background-color: $colorBackgroundKeypadTheme3;
+                background-color: $colorBackgroundScreenTheme3;
 
                 .circle {
                     background-color: $colorKeyToggleBackgroundTheme3;
+                }
+            }
+        }
+        .display {
+            background-color: $colorBackgroundScreenTheme3;
+            color: $colorTextLightTheme3;
+        }
+
+        .keypad {
+            background-color: $colorBackgroundScreenTheme3;
+
+            .btn {
+                color: $colorTextLightTheme3;
+                background-color: $colorKeySecondBacgroundTheme3;
+                box-shadow: inset 0px -4px $colorKeySecondShadowTheme3;
+
+                &--text {
+                    color: $colorTextMedTheme3;
+                    background-color: $colorKeyMainBacgroundTheme3;
+                    box-shadow: inset 0px -4px $colorKeyMainShadowTheme3;
+                }
+
+                &--equal {
+                    color: $colorTextDarkTheme3;
+                    background-color: $colorKeyToggleBackgroundTheme3;
+                    box-shadow: inset 0px -4px $colorKeyShadowTheme3;
                 }
             }
         }
