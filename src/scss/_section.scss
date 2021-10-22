@@ -94,13 +94,21 @@
         align-content: center;
 
         padding: 0 24px;
+
+        
         
         p {
             font-size: 32px;
             letter-spacing: -0.5px;
-            //overflow-x: hidden;
-            word-wrap: break-word;
-            word-break: break-all;
+
+            //  prelama reci u slucaju overflow
+            // word-wrap: break-word;
+            // word-break: break-all;
+
+            // automatski krati text unutar elementa
+            // overflow: hidden;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
         }
 
         @include media(laptop) {
