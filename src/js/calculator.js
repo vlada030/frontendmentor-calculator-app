@@ -41,13 +41,14 @@ export default class Calculator {
     }
 
     addOperation(operation) {
-        if (this.operation === operation) return;
+        if (this.operation === operation && !this.secondOperand) return;
 
         if (this.operation && this.secondOperand) {
             this.calculate()
         }
 
-        this.operation = operation;       
+        this.operation = operation;   
+        //console.log({operation: this.operation});    
     }
 
     calculate() {
