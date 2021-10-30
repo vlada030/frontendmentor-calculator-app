@@ -1,5 +1,7 @@
-import {body, themeSelectorBtn} from './variables'
+import {body, themeSelectorSlider} from './variables'
 import {setToLocalStorage, getFromLocalStorage} from './helper'
+
+const classArr = ["dark", "light", "custom"];
 
 export function initializeTheme() {
     
@@ -10,28 +12,19 @@ export function initializeTheme() {
     const theme = localTheme ? localTheme : systemTheme
 
     body.className = ''
+    themeSelectorSlider.value = classArr.indexOf(theme)
     body.classList.add(theme)
 }
-
-
+// HOW TO STYLE RANGE INPUT, EVENT LISTENER...
+// https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html
 export function themeToggle() {
+    themeSelectorSlider.addEventListener("change", () => {
 
-    themeSelectorBtn.addEventListener("click", () => {
-        const classArr = ["dark", "light", "custom"];
-    
-        const arrLength = classArr.length;
-    
-        for (let i = 0; i < arrLength; i++) {
-            if (body.classList.contains(classArr[i])) {
-                body.classList.toggle(classArr[i], false);
-                
-                const itemNo = i !== arrLength - 1 ? i+1 : 0;
-
-                body.classList.toggle(classArr[itemNo], true)
-
-                setToLocalStorage('theme', classArr[itemNo])
-                return;
-            }
-        }
+        const rangeValue = themeSelectorSlider.value
+        const selectedClass = classArr[rangeValue]
+        
+        body.className = ''
+        body.classList.add(selectedClass)
+        setToLocalStorage('theme', selectedClass)
     });
 }
