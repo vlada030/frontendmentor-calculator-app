@@ -72,6 +72,7 @@ export default class Calculator {
                 this.secondOperand = "";
                 break;
 
+            case "*":
             case "x":
                 result =
                     parseFloat(this.firstOperand) *
